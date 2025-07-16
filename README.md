@@ -75,5 +75,6 @@ Trang chỉ hiện thị 10 sản phẩm xem nhiều hơn thì ấn "Xem Thêm" 
 ```bash
 git clone https://github.com/nguyenngocanhhao/thayhoangflutter.git
 cd thayhoangflutter
+flutter clean
 flutter pub get
 flutter run

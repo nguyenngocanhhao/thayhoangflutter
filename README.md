@@ -49,6 +49,7 @@ _Method: PUT - Update product_
 
 **🗑️ Xoá sản phẩm & phân trang sản phẩm**  
 _Methods: DELETE & GET (paging)_
+Trang chỉ hiện thị 10 sản phẩm xem nhiều hơn thì ấn "Xem Thêm" - Xóa thì ấn biểu tượng 🗑️ 
 
 <img width="373" height="784" alt="image" src="https://github.com/user-attachments/assets/3593e877-f1b9-48b9-b761-e2993ec67937" />
 

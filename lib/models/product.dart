@@ -13,6 +13,7 @@ class Product {
     required this.image,
   });
 
+  // Tạo Product từ JSON
   factory Product.fromJson(Map<String, dynamic> json) {
     return Product(
       id: json['id'],
@@ -22,6 +23,34 @@ class Product {
       image: (json['images'] != null && json['images'].isNotEmpty)
           ? json['images'][0]
           : '',
+    );
+  }
+
+  // Convert Product về dạng JSON
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'price': price,
+      'description': description,
+      'images': [image],
+    };
+  }
+
+  // Tạo bản sao của Product với dữ liệu mới
+  Product copyWith({
+    int? id,
+    String? title,
+    int? price,
+    String? description,
+    String? image,
+  }) {
+    return Product(
+      id: id ?? this.id,
+      title: title ?? this.title,
+      price: price ?? this.price,
+      description: description ?? this.description,
+      image: image ?? this.image,
     );
   }
 }
